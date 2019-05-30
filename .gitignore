@@ -108,3 +108,5 @@ venv.bak/
 Practica 3/slprj/
 
 *.slxc
+
+*.m~
