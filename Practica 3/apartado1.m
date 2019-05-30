@@ -4,7 +4,7 @@ t= 0:0.01:20;
 fprintf('Modelo Sub-amortiguado\n');
 
 sim('modelo_subA',20)
-[tp, sobr, te] = parametros(youtSub,t);
+[tp, sobr, te] = parametros_1(youtSub,t);
 fprintf('Tiempo de pico = %4.2f\n',tp);
 fprintf('Sobreoscilacion = %4.2f por ciento\n',sobr);
 fprintf('Tiempo de establecimiento al 2 por ciento = %4.2f\n\n',te);
@@ -12,7 +12,7 @@ fprintf('Tiempo de establecimiento al 2 por ciento = %4.2f\n\n',te);
 fprintf('Modelo Sobre-amortiguado\n');
 
 sim('modelo_sobA',20)
-[tp, sobr, te] = parametros(youtSob,t);
+[tp, sobr, te] = parametros_1(youtSob,t);
 fprintf('Tiempo de pico = %4.2f\n',tp);
 fprintf('Sobreoscilacion = %4.2f por ciento\n',sobr);
 fprintf('Tiempo de establecimiento al 2 por ciento = %4.2f\n\n',te);
@@ -20,7 +20,7 @@ fprintf('Tiempo de establecimiento al 2 por ciento = %4.2f\n\n',te);
 fprintf('Modelo criticamente amortiguado\n');
 
 sim('modelo_criA',20)
-[tp, sobr, te] = parametros(youtCri,t);
+[tp, sobr, te] = parametros_1(youtCri,t);
 fprintf('Tiempo de pico = %4.2f\n',tp);
 fprintf('Sobreoscilacion = %4.2f por ciento\n',sobr);
 fprintf('Tiempo de establecimiento al 2 por ciento = %4.2f\n',te);

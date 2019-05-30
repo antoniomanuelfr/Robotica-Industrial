@@ -1,5 +1,5 @@
 % Funcion para calcular los parametros de un sistema
-function [ tp, sobr, te ] = parametros(yout, t)
+function [ tp, sobr, te ] = parametros_1(yout, t)
     [M,I] = max(yout);
     tp = t(I);
     % Restamos uno porque sabemos que la entrada es un escalon unitario
