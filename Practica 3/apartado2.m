@@ -44,8 +44,8 @@ legend('Controlador PI','Realimentado');
 title('Controlador PI vs Realimentado (Escalon)');
 xlabel('Tiempo');
 f6 = figure(6);
-plot (tout_c, [cont_r,re_r]);
-legend('Controlador PI','Realimentado');
+plot (tout_c, [cont_r,re_r,tout_c]);
+legend('Controlador PI','Realimentado', 'x(t)');
 title('Controlador PI vs Realimentado (Rampa unitaria)');
 xlabel('Tiempo');
 
